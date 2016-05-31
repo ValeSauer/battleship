@@ -5,6 +5,7 @@
 <ion-content padding>
     <div id="game">
         <div class="cell" [attr.id]="'cell-'+cell" *ngFor="#cell of cells"></div>
+        <div [attr.class]="'ship ship-'+ship.length" [style.left]="ship.left" [style.top]="ship.top" *ngFor="#ship of currentPlayer.ships">asdlöaksdölasdlök</div>
 
     </div>
     <button (click)="startGame()">START GAME</button>
