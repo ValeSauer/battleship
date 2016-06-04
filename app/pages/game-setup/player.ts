@@ -6,12 +6,10 @@ import {IPlayer} from '../game-setup/IPlayer.ts';
 
 export class Player implements IPlayer {
     id:number;
-    ai:boolean;
     ships:Array<Ship> = [];
 
-    constructor(id:number, ai = false) {
+    constructor(id:number) {
         this.id = id;
-        this.ai = ai;
 
         for (let i = 0; i < 10; i++) {
             this.ships.push(new Ship(0,i,2));

@@ -5,6 +5,5 @@ import {Ship} from '../game-setup/ship.ts';
 
 export interface IPlayer {
     id:number;
-    ai:boolean;
     ships:Array<Ship>;
 }

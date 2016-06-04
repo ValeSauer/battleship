@@ -1,6 +1,7 @@
 import {Page, NavController} from 'ionic-angular';
 import {GamePlay} from '../game-play/game-play';
 import {Player} from '../game-setup/player.ts';
+import {AIPlayer} from '../game-setup/AIPlayer.ts';
 import {Ship} from '../game-setup/ship.ts';
 import * as interact from 'interact.js';
 import {IPlayer} from "./IPlayer";
@@ -15,7 +16,7 @@ export class GameSetup {
     x:number = 10;
     y:number = 10;
 
-    players:Array<IPlayer> = [new Player(1, false), new Player(2, true)];
+    players:Array<IPlayer> = [new Player(1), new AIPlayer(2)];
 
     static originX:number;
     static originY:number;
